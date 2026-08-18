@@ -9,15 +9,6 @@ A fully functional YouTube clone built with **HTML, CSS, and JavaScript**. All d
 
 ## 📸 Screenshots
 
-### Homepage
-![Homepage](screenshots/homepage.png)
-
-### Watch Page
-![Watch Page](screenshots/watch.png)
-
-### Profile
-![Profile](screenshots/profile.png)
-
 ---
 
 ## ✨ Features
@@ -105,6 +96,7 @@ A fully functional YouTube clone built with **HTML, CSS, and JavaScript**. All d
 - **YouTube API** - Video embedding
 
 ---
+## 📸 Screenshots
 
 ## 📁 Project Structure
 Upload page
