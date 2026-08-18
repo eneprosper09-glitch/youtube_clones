@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone - Your Channel</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ==================================================
+    HEADER
+    ================================================== -->
+    <header class="header">
+
+        <!-- LEFT -->
+        <div class="header-left">
+            <button class="menu-btn" id="menuButton" title="Menu">
+                ☰
+            </button>
+
+            <a href="index.html" class="youtube-logo">
+                <span class="youtube-icon">▶</span>
+                <span>YouTube</span>
+            </a>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="search-container">
+            <input id="searchInput" type="text" placeholder="Search">
+            <button id="searchButton" class="search-btn" title="Search">
+                🔍
+            </button>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="header-right">
+           <a href="create.html" class="header-icon-link" id="createButton" title="Create">
+    ⊞
+</a>
+           <a href="notifications.html" class="header-icon" id="notificationButton" title="Notifications" style="text-decoration:none;color:inherit;">
+    🔔
+    <span class="notif-badge" id="notifBadge" style="display:none;">0</span>
+</a>
+            <a href="profile.html" class="profile-picture-link" id="profileButton" title="Account">
+    <span class="profile-picture">P</span>
+</a>
+        </div>
+
+    </header>
+
+    <!-- ==================================================
+    SIDEBAR
+    ================================================== -->
+    <aside class="sidebar" id="sidebar">
+
+        <!-- Main Navigation -->
+        <a href="index.html" class="sidebar-item" data-page="home">
+            <span class="sidebar-icon">⌂</span>
+            <span class="sidebar-text">Home</span>
+        </a>
+
+        <a href="shorts-page.html" class="sidebar-item" data-page="shorts">
+            <span class="sidebar-icon">▶</span>
+            <span class="sidebar-text">Shorts</span>
+        </a>
+
+        <a href="subscriptions.html" class="sidebar-item" data-page="subscriptions">
+            <span class="sidebar-icon">▣</span>
+            <span class="sidebar-text">Subscriptions</span>
+        </a>
+
+        <div class="sidebar-divider"></div>
+
+        <!-- You -->
+        <div class="sidebar-heading">
+            <span class="sidebar-text">You</span>
+        </div>
+
+        <a href="channel.html" class="sidebar-item active" data-page="channel">
+            <span class="sidebar-icon">◉</span>
+            <span class="sidebar-text">Your channel</span>
+        </a>
+
+        <a href="history.html" class="sidebar-item" data-page="history">
+            <span class="sidebar-icon">◷</span>
+            <span class="sidebar-text">History</span>
+        </a>
+
+          <a href="your-videos.html" class="sidebar-item" data-page="your-videos">
+            <span class="sidebar-icon">▣</span>
+            <span class="sidebar-text">Your videos</span>
+        </a>
+
+       <a href="watch-later.html" class="sidebar-item" data-page="watch-later">
+    <span class="sidebar-icon">◷</span>
+    <span class="sidebar-text">Watch later</span>
+</a>
+
+        <a href="liked.html" class="sidebar-item" data-page="liked">
+            <span class="sidebar-icon">♡</span>
+            <span class="sidebar-text">Liked videos</span>
+        </a>
+
+        <div class="sidebar-divider"></div>
+
+        <!-- Explore -->
+<div class="sidebar-heading">
+    <span class="sidebar-text">Explore</span>
+</div>
+
+<a href="explore.html?category=trending" class="sidebar-item" data-category="Trending">
+    <span class="sidebar-icon">🔥</span>
+    <span class="sidebar-text">Trending</span>
+</a>
+
+<a href="explore.html?category=music" class="sidebar-item" data-category="Music">
+    <span class="sidebar-icon">♫</span>
+    <span class="sidebar-text">Music</span>
+</a>
+
+<a href="explore.html?category=gaming" class="sidebar-item" data-category="Gaming">
+    <span class="sidebar-icon">🎮</span>
+    <span class="sidebar-text">Gaming</span>
+</a>
+
+<a href="explore.html?category=news" class="sidebar-item" data-category="News">
+    <span class="sidebar-icon">📰</span>
+    <span class="sidebar-text">News</span>
+</a>
+
+<a href="explore.html?category=sports" class="sidebar-item" data-category="Sports">
+    <span class="sidebar-icon">⚽</span>
+    <span class="sidebar-text">Sports</span>
+</a>
+
+<a href="explore.html?category=movies" class="sidebar-item" data-category="Movies">
+    <span class="sidebar-icon">🎬</span>
+    <span class="sidebar-text">Movies & TV</span>
+</a>
+
+    </aside>
+
+    <!-- ==================================================
+    MAIN CONTENT - CHANNEL PAGE
+    ================================================== -->
+    <main class="main-content" id="mainContent">
+
+        <div class="channel-container">
+
+            <!-- Channel Banner -->
+            <div class="channel-banner">
+                <div class="channel-banner-image" id="channelBanner">
+                    <span>🎬</span>
+                </div>
+            </div>
+
+            <!-- Channel Info -->
+            <div class="channel-info-header">
+                <div class="channel-avatar-large" id="channelAvatar">C</div>
+                <div class="channel-info-details">
+                    <h1 id="channelName">Your Channel</h1>
+                    <p id="channelHandle">@yourchannel</p>
+                    <p id="channelStats">0 subscribers • 0 videos</p>
+                </div>
+                <button class="channel-edit-btn" id="editChannelBtn">✏️ Customize Channel</button>
+            </div>
+
+            <!-- Channel Tabs -->
+            <div class="channel-tabs">
+                <button class="channel-tab active" data-tab="videos">Videos</button>
+                <button class="channel-tab" data-tab="shorts">Shorts</button>
+                <button class="channel-tab" data-tab="playlists">Playlists</button>
+                <button class="channel-tab" data-tab="about">About</button>
+            </div>
+
+            <!-- Tab Content: Videos -->
+            <div class="channel-tab-content active" id="tab-videos">
+                <section class="video-section">
+                    <div class="video-grid" id="channelVideoGrid"></div>
+                </section>
+            </div>
+
+            <!-- Tab Content: Shorts -->
+            <div class="channel-tab-content" id="tab-shorts">
+                <section class="video-section">
+                    <div class="shorts-grid" id="channelShortsGrid"></div>
+                </section>
+            </div>
+
+            <!-- Tab Content: Playlists -->
+            <div class="channel-tab-content" id="tab-playlists">
+                <!-- Playlists will be loaded here by JavaScript -->
+            </div>
+
+            <!-- Tab Content: About -->
+            <div class="channel-tab-content" id="tab-about">
+                <div class="channel-about">
+                    <h3>About</h3>
+                    <p id="channelDescription">Welcome to my channel! I create content about coding, design, and creativity. Subscribe and join the community! 🚀</p>
+                    <div class="channel-stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number" id="aboutSubscribers">0</span>
+                            <span class="stat-label">Subscribers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="aboutVideos">0</span>
+                            <span class="stat-label">Videos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="aboutViews">0</span>
+                            <span class="stat-label">Total Views</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="aboutJoined">2026</span>
+                            <span class="stat-label">Joined</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- ==================================================
+    JAVASCRIPT
+    ================================================== -->
+    <script src="js/data.js"></script>
+    <script src="js/channel.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

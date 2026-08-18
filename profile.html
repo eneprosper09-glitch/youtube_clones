@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone - Profile</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ==================================================
+    HEADER
+    ================================================== -->
+    <header class="header">
+
+        <!-- LEFT -->
+        <div class="header-left">
+            <button class="menu-btn" id="menuButton" title="Menu">
+                ☰
+            </button>
+
+            <a href="index.html" class="youtube-logo">
+                <span class="youtube-icon">▶</span>
+                <span>YouTube</span>
+            </a>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="search-container">
+            <input id="searchInput" type="text" placeholder="Search">
+            <button id="searchButton" class="search-btn" title="Search">
+                🔍
+            </button>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="header-right">
+            <a href="create.html" class="header-icon-link" id="createButton" title="Create">
+    ⊞
+</a>
+            <a href="notifications.html" class="header-icon-link" id="notificationButton" title="Notifications">
+                🔔
+                <span class="notif-badge" id="notifBadge">0</span>
+            </a>
+            <a href="profile.html" class="profile-picture-link" id="profileButton" title="Account">
+                <span class="profile-picture">P</span>
+            </a>
+        </div>
+
+    </header>
+
+    <!-- ==================================================
+    SIDEBAR
+    ================================================== -->
+    <aside class="sidebar" id="sidebar">
+
+        <!-- Main Navigation -->
+        <a href="index.html" class="sidebar-item" data-page="home">
+            <span class="sidebar-icon">⌂</span>
+            <span class="sidebar-text">Home</span>
+        </a>
+
+        <a href="shorts-page.html" class="sidebar-item" data-page="shorts">
+            <span class="sidebar-icon">▶</span>
+            <span class="sidebar-text">Shorts</span>
+        </a>
+
+        <a href="subscriptions.html" class="sidebar-item" data-page="subscriptions">
+            <span class="sidebar-icon">▣</span>
+            <span class="sidebar-text">Subscriptions</span>
+        </a>
+
+        <div class="sidebar-divider"></div>
+
+        <!-- You -->
+        <div class="sidebar-heading">
+            <span class="sidebar-text">You</span>
+        </div>
+
+        <a href="channel.html" class="sidebar-item" data-page="channel">
+            <span class="sidebar-icon">◉</span>
+            <span class="sidebar-text">Your channel</span>
+        </a>
+
+        <a href="history.html" class="sidebar-item" data-page="history">
+            <span class="sidebar-icon">◷</span>
+            <span class="sidebar-text">History</span>
+        </a>
+
+        <a href="your-videos.html" class="sidebar-item" data-page="your-videos">
+            <span class="sidebar-icon">▣</span>
+            <span class="sidebar-text">Your videos</span>
+        </a>
+
+        <a href="watch-later.html" class="sidebar-item" data-page="watch-later">
+            <span class="sidebar-icon">◷</span>
+            <span class="sidebar-text">Watch later</span>
+        </a>
+
+        <a href="liked.html" class="sidebar-item" data-page="liked">
+            <span class="sidebar-icon">♡</span>
+            <span class="sidebar-text">Liked videos</span>
+        </a>
+
+        <div class="sidebar-divider"></div>
+
+        <!-- Explore -->
+        <div class="sidebar-heading">
+            <span class="sidebar-text">Explore</span>
+        </div>
+
+        <a href="explore.html?category=trending" class="sidebar-item" data-category="Trending">
+            <span class="sidebar-icon">🔥</span>
+            <span class="sidebar-text">Trending</span>
+        </a>
+
+        <a href="explore.html?category=music" class="sidebar-item" data-category="Music">
+            <span class="sidebar-icon">♫</span>
+            <span class="sidebar-text">Music</span>
+        </a>
+
+        <a href="explore.html?category=gaming" class="sidebar-item" data-category="Gaming">
+            <span class="sidebar-icon">🎮</span>
+            <span class="sidebar-text">Gaming</span>
+        </a>
+
+        <a href="explore.html?category=news" class="sidebar-item" data-category="News">
+            <span class="sidebar-icon">📰</span>
+            <span class="sidebar-text">News</span>
+        </a>
+
+        <a href="explore.html?category=sports" class="sidebar-item" data-category="Sports">
+            <span class="sidebar-icon">⚽</span>
+            <span class="sidebar-text">Sports</span>
+        </a>
+
+        <a href="explore.html?category=movies" class="sidebar-item" data-category="Movies">
+            <span class="sidebar-icon">🎬</span>
+            <span class="sidebar-text">Movies & TV</span>
+        </a>
+
+    </aside>
+
+    <!-- ==================================================
+    MAIN CONTENT - PROFILE
+    ================================================== -->
+    <main class="main-content" id="mainContent">
+
+        <div class="profile-container">
+
+            <!-- Profile Header -->
+            <div class="profile-header">
+                <div class="profile-avatar-section">
+                    <div class="profile-avatar" id="profileAvatar">P</div>
+                    <button class="change-avatar-btn" id="changeAvatarBtn">📷 Change</button>
+                </div>
+                <div class="profile-info">
+                    <h1 id="profileName">Your Name</h1>
+                    <p id="profileHandle">@yourhandle</p>
+                    <p id="profileEmail">you@email.com</p>
+                    <button class="edit-profile-btn" id="editProfileBtn">✏️ Edit Profile</button>
+                </div>
+            </div>
+
+            <!-- Profile Stats -->
+            <div class="profile-stats">
+                <div class="stat-card">
+                    <span class="stat-number" id="statSubscribers">0</span>
+                    <span class="stat-label">Subscribers</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="statVideos">0</span>
+                    <span class="stat-label">Videos</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="statLikes">0</span>
+                    <span class="stat-label">Likes</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="statViews">0</span>
+                    <span class="stat-label">Total Views</span>
+                </div>
+            </div>
+
+            <!-- Profile Settings -->
+            <div class="profile-settings">
+                <h2>Settings</h2>
+                
+                <div class="settings-group">
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <span class="setting-icon">🌓</span>
+                            <div>
+                                <h4>Dark Mode</h4>
+                                <p>Toggle dark/light theme</p>
+                            </div>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="darkModeToggle">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <span class="setting-icon">🔔</span>
+                            <div>
+                                <h4>Notifications</h4>
+                                <p>Enable push notifications</p>
+                            </div>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="notifToggle" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <span class="setting-icon">🔒</span>
+                            <div>
+                                <h4>Privacy</h4>
+                                <p>Manage your privacy settings</p>
+                            </div>
+                        </div>
+                        <button class="settings-btn" id="privacyBtn">Manage</button>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <span class="setting-icon">💾</span>
+                            <div>
+                                <h4>Data</h4>
+                                <p>Clear your watch history, likes, and more</p>
+                            </div>
+                        </div>
+                        <button class="settings-btn danger" id="clearDataBtn">Clear Data</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Account Actions -->
+            <div class="account-actions">
+                <button class="logout-btn" id="logoutBtn">🚪 Sign Out</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- ==================================================
+    JAVASCRIPT
+    ================================================== -->
+    <script src="js/data.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
