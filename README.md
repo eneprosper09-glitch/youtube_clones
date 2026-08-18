@@ -107,9 +107,14 @@ A fully functional YouTube clone built with **HTML, CSS, and JavaScript**. All d
 ---
 
 ## 📁 Project Structure
+Upload page
 <img width="1440" height="900" alt="Screenshot 2026-08-18 at 18 31 17" src="https://github.com/user-attachments/assets/85747808-19f1-4146-a30e-3c10745559df" />
+Notification page
 <img width="1440" height="900" alt="Screenshot 2026-08-18 at 18 31 08" src="https://github.com/user-attachments/assets/e7b2ada2-3651-4738-92b0-01de19bd391e" />
+Profile page
 <img width="1440" height="900" alt="Screenshot 2026-08-18 at 18 31 04" src="https://github.com/user-attachments/assets/3da78f55-4f2e-4233-a40d-f89d9924c985" />
+History
 <img width="1440" height="900" alt="Screenshot 2026-08-18 at 18 31 00" src="https://github.com/user-attachments/assets/ae4bdecd-17df-4961-bad2-58cca4eb0b49" />
+Homepage
 <img width="1440" height="900" alt="Screenshot 2026-08-18 at 18 30 50" src="https://github.com/user-attachments/assets/961948a3-4e78-4291-8ae1-11cc04b8930c" />
 
