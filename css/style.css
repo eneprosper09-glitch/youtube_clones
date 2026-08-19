@@ -3147,3 +3147,154 @@ select.form-input {
         text-align: center;
     }
 }
+/* =============================================
+   LOGIN PAGE
+============================================= */
+
+.login-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0f0f0f;
+    padding: 20px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 420px;
+}
+
+.login-box {
+    background: #1a1a1a;
+    padding: 40px 32px;
+    border-radius: 16px;
+    border: 1px solid #272727;
+}
+
+.login-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #f1f1f1;
+    margin-bottom: 24px;
+}
+
+.login-logo .youtube-icon {
+    color: #ff0000;
+    font-size: 32px;
+}
+
+.login-box h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #f1f1f1;
+    margin: 0 0 8px 0;
+    text-align: center;
+}
+
+.login-box > p {
+    color: #888;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 0 24px 0;
+}
+
+.login-box .form-group {
+    margin-bottom: 16px;
+}
+
+.login-box .form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #f1f1f1;
+    margin-bottom: 6px;
+}
+
+.login-box .form-input {
+    width: 100%;
+    background: #0f0f0f;
+    border: 1px solid #303030;
+    border-radius: 8px;
+    color: #f1f1f1;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.login-box .form-input:focus {
+    outline: none;
+    border-color: #3ea6ff;
+}
+
+.login-btn {
+    width: 100%;
+    background: #3ea6ff;
+    border: none;
+    color: #0f0f0f;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 8px;
+}
+
+.login-btn:hover {
+    background: #65b8ff;
+}
+
+.signup-text {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.signup-text a {
+    color: #3ea6ff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+/* =============================================
+   LOGOUT BUTTON IN HEADER
+============================================= */
+
+#logoutButton {
+    font-size: 20px;
+}
+
+#logoutButton:hover {
+    background: #cc0000;
+    color: #fff;
+}
+
+/* =============================================
+   RESPONSIVE - LOGIN
+============================================= */
+
+@media (max-width: 480px) {
+    .login-box {
+        padding: 24px 16px;
+    }
+    
+    .login-logo {
+        font-size: 22px;
+    }
+    
+    .login-box h2 {
+        font-size: 20px;
+    }
+}

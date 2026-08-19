@@ -49,9 +49,17 @@
                 🔔
                 <span class="notif-badge" id="notifBadge">0</span>
             </a>
-            <a href="profile.html" class="profile-picture-link" id="profileButton" title="Account">
-                <span class="profile-picture">P</span>
-            </a>
+            <div class="header-right">
+    <!-- Profile -->
+    <a href="profile.html" class="profile-picture-link" id="profileButton" title="Account">
+        <span class="profile-picture" id="headerAvatar">P</span>
+    </a>
+    
+    <!-- Logout Button -->
+    <button class="header-icon-link" id="logoutButton" title="Sign Out" onclick="logoutUser()">
+        🚪
+    </button>
+</div>
         </div>
 
     </header>

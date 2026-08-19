@@ -250,3 +250,18 @@ document.addEventListener('DOMContentLoaded', function() {
     setupSearch();
     setupSidebar();
 });
+// =============================================
+// LOGOUT FUNCTION
+// =============================================
+
+function logoutUser() {
+    if (confirm('Are you sure you want to sign out?')) {
+        // Clear user session
+        localStorage.removeItem('currentUser');
+        localStorage.removeItem('channelData');
+        localStorage.removeItem('userData');
+        
+        // Redirect to login page
+        window.location.href = 'login.html';
+    }
+}
